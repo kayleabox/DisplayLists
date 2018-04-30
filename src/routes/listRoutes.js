@@ -1,4 +1,9 @@
 module.exports = (app) => {
+  app.get('/', (req, res) => {
+    console.log('made it!');
+    res.send('success');
+  });
+
   app.get('/api/get', (req, res) => {
     console.log('made it!');
     res.send('success');
