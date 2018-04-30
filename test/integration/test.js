@@ -11,11 +11,11 @@ describe(' 1 + 1 ', function () {
 });
 
 describe('testing...', function () {
-  it('should get api route /api/get', async () => {
-    const response = await axios.get('http://localhost:5000/api/get');
+  it('should get api route /', async () => {
+    const response = await axios.get('http://localhost:5000/');
     console.log(response);
 
     expect(response.status).to.equal(200);
-    expect(response.data).to.equal('success');
+    expect(response.data).to.equal('hello');
   });
 });
